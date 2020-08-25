@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "task1": "nodemon babel-node hw_1/task1.js",
-    "task2": "nodemon babel-node hw_1/task2.js"
+    "task1": "nodemon babel-node hw_01/task1.js",
+    "task2": "nodemon babel-node hw_01/task2.js",
+    "server": "nodemon src/hw_02/app.ts"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,19 @@
     "@babel/core": "^7.11.1",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
-    "nodemon": "^2.0.4"
+    "@types/hapi__joi": "^17.1.4",
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.3",
+    "typescript": "^3.9.7"
   },
   "dependencies": {
-    "csvtojson": "^2.0.10"
+    "@hapi/joi": "^17.1.1",
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1",
+    "express-joi-validation": "^4.0.4-beta.0",
+    "lodash": "^4.17.20",
+    "uuid": "^8.3.0"
   }
 }

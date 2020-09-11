@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "task1": "nodemon babel-node hw_01/task1.js",
     "task2": "nodemon babel-node hw_01/task2.js",
-    "server": "nodemon src/hw_02/app.ts"
+    "server": "nodemon src/hw_02/app.ts",
+    "bd": "nodemon src/hw_03/index.ts"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,9 @@
     "express": "^4.17.1",
     "express-joi-validation": "^4.0.4-beta.0",
     "lodash": "^4.17.20",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5",
     "uuid": "^8.3.0"
   }
 }

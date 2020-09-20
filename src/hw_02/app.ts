@@ -47,7 +47,7 @@ function validationSchema(schema: any) {
     }
 }
 
-app.listen(3000);
+// app.listen(3000);
 
 app.use(express.json());
 

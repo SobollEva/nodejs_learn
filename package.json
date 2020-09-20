@@ -8,7 +8,8 @@
     "task1": "nodemon babel-node hw_01/task1.js",
     "task2": "nodemon babel-node hw_01/task2.js",
     "server": "nodemon src/hw_02/app.ts",
-    "bd": "nodemon src/hw_03/index.ts"
+    "hw03": "nodemon src/hw_03/index.ts",
+    "hw04": "nodemon src/hw_04/index.ts"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,6 @@
 import {User} from '../types/user.type';
 import UserService from "../core/services/user.sevice";
+
 const {v1: uuidv4} = require('uuid');
 
 const getAutoSuggestUsers = require('../core/utils/utils');
@@ -10,9 +11,12 @@ const userRouter = express.Router();
 const _ = require('lodash');
 const scheme = require('../core/utils/validation/user.scheme');
 const userService = new UserService();
+const debug = require('debug')('app:router:user');
+const error_handler = require('../core/middlewares/error-handling')
 
 userRouter.route('/user/:id')
     .get(async function (req: any, res: any, next: any) {
+        error_handler(req, res);
         const user: User = await userService.getUserById(req.params.id);
         Boolean(user && !user.isDeleted)
             ? res.json(user)

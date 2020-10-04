@@ -1,7 +1,10 @@
 import {db, UserGroupModel} from '../../models';
 
+const debug = require('debug')('app:service:user_group');
+
 export default class UserGroupService {
     async addUsersToGroup(groupId: string, userIdList: string[]) {
+        debug(`addUsersToGroup, groupId: ${groupId}, userIdList: ${JSON.stringify(userIdList)}`);
         return await db.transaction(function (t: any) {
             let promises = [];
             promises.push(

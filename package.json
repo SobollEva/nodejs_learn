@@ -9,7 +9,7 @@
     "task2": "nodemon babel-node hw_01/task2.js",
     "server": "nodemon src/hw_02/app.ts",
     "hw03": "nodemon src/hw_03/index.ts",
-    "hw04": "nodemon src/hw_04/index.ts"
+    "hw": "nodemon src/hw/index.ts"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "@babel/core": "^7.11.1",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.0",
+    "@types/express": "^4.17.8",
     "@types/hapi__joi": "^17.1.4",
     "@types/node": "^14.0.27",
     "nodemon": "^2.0.4",
@@ -35,12 +36,14 @@
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "csvtojson": "^2.0.10",
+    "debug": "^4.2.0",
     "express": "^4.17.1",
     "express-joi-validation": "^4.0.4-beta.0",
     "lodash": "^4.17.20",
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.3.5",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.0",
+    "winston": "^3.3.3"
   }
 }

@@ -3,6 +3,7 @@ import UserGroupService from '../core/services/userGroup.sevice';
 const express = require('express');
 const userGroupRouter = express.Router();
 const userGroupService = new UserGroupService();
+const debug = require('debug')('app:router:user_group');
 
 userGroupRouter.route('/group_users')
     .post(async function (req: any, res: any) {

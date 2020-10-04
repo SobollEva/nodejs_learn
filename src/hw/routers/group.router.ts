@@ -9,6 +9,7 @@ const groupRouter = express.Router();
 const _ = require('lodash');
 const scheme = require('../core/utils/validation/group.scheme');
 const groupService = new GroupService();
+const debug = require('debug')('app:router:group');
 
 groupRouter.route('/group/:id')
     .get(async function (req: any, res: any, next: any) {

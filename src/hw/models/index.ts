@@ -1,5 +1,3 @@
-import {log} from "util";
-
 const {Sequelize, DataTypes} = require('sequelize');
 export const db = new Sequelize('postgres://postgres:genya147@127.0.0.1:5432/User');
 const GroupFactory = require('../models/group.model');
